@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/avatar.png" type="image/x-icon">
+
+    <title>Portfolio | Saicharan</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Portfolio</p>
+            
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a href="assets/CisResume.pdf" target="_blank" class="btn"> Download Resume <i class="uil uil-file-alt"></i> </a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Saicharan Kotekal</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Aspiring Software Engineer proficient in Web Development, Machine Learning, Data Structure, and Algorithms. Possess strong technical skills as I worked in Accenture as Java Full-stack developer. Detail-oriented, responsible with a get-it-done, on-time, and high-quality product spirit with a demonstrated history in working in the software engineering domain.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me</button>
+                <button class="btn">Download Resume <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="social_icons">
+                <a href="https://www.instagram.com/thenameis_saicharan/" target="_blank" class="icon"> <i class="uil uil-instagram"></i> </a>
+                <a href="https://www.linkedin.com/in/saicharan018/" target="_blank" class="icon"> <i class="uil uil-linkedin-alt"></i> </a>
+                <a href="https://github.com/saicharan018" target="_blank" class="icon"> <i class="uil uil-github-alt"></i> </a>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/avatar.png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>I am a Research Assistant at FSU. I am pursuing a master's degree in Information Technology from Florida State University(FSU) with 3.96 CGPA. I am broadly interested in full stack software development, Data Analyst, distributed and networked systems.
+
+                        <br>Outside of work, I read sci-fi/fantasy books, bike and cook.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend And Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                        <span>Core Java</span>
+                        <span>React Js</span>
+                        <span>Angular</span>
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>OOPS</span>
+                        <span>Nest Js</span>
+                        <span>Machine Learning</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>spring</span>
+                        <span>springboot</span>
+                        <span>Thymeleaf</span>
+                        <span>JAVA</span>
+                        <span>Python</span>
+                        <span>nodejs</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+        <div class="top-header">
+            <h1>Projects & Experinces</h1>
+        </div>
+        <div class="project-container">
+            <div class="project-box">
+                
+                <h3>Social workers in the library</h3>
+                <label>As a Research Assistant under Margaret Sullivan, I developed a web scraping tool using Scrapy, Selenium, and Python to extract and analyze library hiring data, applying NLP techniques (NER, Topic Modeling) and Sentiment Analysis (NLTK) to identify trends, and visualized insights with Matplotlib, Seaborn, and sci-kit-learn for topic clustering and classification.</label>
+            </div>
+            <div class="project-box">
+                
+                <h3>Advanced Engineering Analyst</h3>
+                <label>Proficient in Agile with experience in RESTful APIs, front-end UI design (HTML5, CSS3, JavaScript, ReactJS), and back-end systems using Spring Framework. Skilled in Microservices development (Spring Boot), database modeling (Oracle, MySQL, MongoDB), and version control (GIT). Familiar with user authentication (Spring Security) and PeopleSoft.</label>
+            </div>
+            <div class="project-box">
+                
+                <h3>Social Distance Monitoring</h3>
+                <label>Directed the deployment of a social distancing monitoring solution for college activities, employing enhanced YOLOv4 and Deep SORT algorithms, resulting in a 45% decrease in close contact occurrences and ensuring compliance with safety guidelines.</label>
+            </div>
+            <!-- Additional Project Boxes -->
+            <div class="project-box">
+                
+                <h3>Fake News Detection</h3>
+                <label>Employed Naive Bayes, SVM, Neural Network, and LSTM models for text classification, performing an in-depth analysis to assess their effectiveness and efficiency in identifying patterns within the data.</label>
+            </div>
+            <div class="project-box">
+               
+                <h3>SQL Developer Intern</h3>
+                <label>Extracted and collected data for critical reports by developing and optimizing complex SQL queries and scripts, ensuring efficient data management and accuracy while generating detailed reports and spreadsheets that document database changes, performance metrics, and data integrity through rigorous validation and analysis.</label>
+            </div>
+        
+        </div>
+    </section>
+    
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: kotekalsaicharan18@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +18504052828</p>
+                </div>
+             </div>
+          </div>
+       </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Saicharan K</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><i class="uil uil-instagram"></i></div>
+            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            <div class="icon"><i class="uil uil-github-alt"></i></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Saicharan Kotekal</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
