@@ -339,104 +339,146 @@ h3{
 }
 
 /* ----- ABOUT / SKILLS BOX ----- */
-.skills-box{
+.skills-box {
     margin: 10px;
+    width: 100%; /* Ensure it takes full width */
 }
-.skills-header{
+.skills-header {
     margin-bottom: 30px;
+    text-align: left;
 }
-.skills-list{
+.skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px; /* Increased from 5px to 10px for more space between items */
+    width: 100%; /* Set to 100% */
 }
-.skills-list span{
+.skills-list span {
+    flex: 1 1 auto; /* Allow flex items to grow and shrink */
+    max-width: 200px; /* Optionally limit maximum width */
     font-size: 14px;
     background: var(--first-color);
     color: var(--color-white);
-    padding: 2px 10px;
+    padding: 5px 15px; /* Increased padding for more space around the text */
     border-radius: 5px;
 }
-
-/* ----- PROJECTS BOX ----- */
-.project-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+.col {
+    display: flex; /* Added flexbox to arrange skills boxes side by side */
+    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+    justify-content: space-between; /* Space out boxes evenly */
+    width: 100%; /* Set to 100% */
 }
-.project-box {
+
+
+
+
+/* ----- Timeline Container ----- */
+.timeline {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 30%; /* Adjust width */
-    height: 250px;
-    background: var(--color-white);
-    border-radius: 20px;
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
-    overflow: hidden;
-    transition: transform 0.3s ease; /* Add smooth hover effect */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.project-box:hover {
-    transform: translateY(-10px); /* Move up slightly on hover */
-}
-
-.project-box > i {
-    font-size: 50px;
-    color: #00B5E7;
-    margin-bottom: 25px;
-}
-.project-box h3, .project-box label {
-    color: #777;
-}
-.project-box::after,
-.contact-info::after {
-    content: "";
+.timeline::after {
+    content: '';
     position: absolute;
-    bottom: -100%;
-    background: var(--second-color);
-    width: 100%;
-    height: 100%;
-    transition: .4s;
+    width: 6px;
+    background-color: var(--second-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* ----- Project Item Styling ----- */
+.project-item {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+}
+
+.project-item:nth-child(odd) {
+    left: 0;
+}
+
+.project-item:nth-child(even) {
+    left: 50%;
+}
+
+.project-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: var(--second-color);
+    border: 4px solid var(--color-white);
+    top: 15px;
+    border-radius: 50%;
     z-index: 1;
 }
-.project-box:hover::after,
-.contact-info:hover::after {
-    bottom: 0;
+
+.project-item:nth-child(even)::after {
+    left: -13px;
 }
-.project-box:hover i,
-.project-box:hover h3,
-.project-box:hover label {
-    color: var(--color-white);
-    z-index: 2;
+
+.project-content {
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    position: relative;
 }
-.project-box label {
-    font-size: 14px; /* Maintain a readable font size */
+
+.project-content h3 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.project-content p {
+    font-size: 14px;
     color: #777;
-    width: 90%; /* Adjust width to allow more space for the label */
-    text-align: center; /* Center align the text */
-    margin: 10px 0; /* Add some margin for spacing */
-    overflow: visible; /* Allow overflow text to be visible */
-    white-space: normal; /* Allow text to wrap onto multiple lines */
 }
 
-
-/* ----- Responsive Design ----- */
-@media (max-width: 1200px) {
-    .project-box {
-        width: 45%; /* Two columns on medium screens */
-    }
+/* ----- GitHub Link Styling ----- */
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00B5E7;
+    text-decoration: none;
+    border: 1px solid #00B5E7;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
+.github-link:hover {
+    background-color: #00B5E7;
+    color: #fff;
+}
+
+/* ----- Responsive Design for Timeline ----- */
 @media (max-width: 768px) {
-    .project-box {
-        width: 100%; /* Full width on small screens */
+    .timeline::after {
+        left: 31px;
+    }
+
+    .project-item {
+        width: 100%;
+        padding-left: 20px;  /* Adjusted padding */
+        padding-right: 20px;  /* Adjusted padding */
+    }
+
+    .project-item:nth-child(even) {
+        left: 0;
+    }
+
+    .project-item::after {
+        left: 18px;
     }
 }
+
+
 
 /* ----- CONTACT BOX ----- */
 .contact-info{
