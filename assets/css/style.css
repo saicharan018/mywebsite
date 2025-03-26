@@ -149,6 +149,76 @@ nav{
 }
 
 
+
+
+
+.work-section {
+    padding: 50px 0;
+    background-color: var(--body-color);
+    color: var(--text-color-second);
+}
+.section-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: black;
+}
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.work-card {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.work-card:hover {
+    transform: translateY(-10px);
+}
+.work-card img {
+    width: 100%;
+    height: auto;
+}
+.work-info {
+    padding: 20px;
+}
+.work-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+.work-info p {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.btn {
+    background-color: var(--second-color);
+    color: var(--color-white);
+    border-radius: 8px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: var(--first-color);
+}
+@media (max-width: 768px) {
+    .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ----- WRAPPER DESIGN ----- */
 .wrapper{
     padding-inline: 10vw;
